@@ -1,0 +1,14 @@
+services:
+  web:
+    image: sharpezhang/gpt-reader:v1.0.4
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      SLACK_TOKEN: ${SLACK_TOKEN}
+      SLACK_SIGNING_SECRET: ${SLACK_SIGNING_SECRET}
+      CF_ACCESS_CLIENT_ID: ${CF_ACCESS_CLIENT_ID}
+      CF_ACCESS_CLIENT_SECRET: ${CF_ACCESS_CLIENT_SECRET}
+      PHANTOMJSCLOUD_API_KEY: ${PHANTOMJSCLOUD_API_KEY}
+      SPEECH_KEY: ${SPEECH_KEY}
+      SPEECH_REGION: ${SPEECH_KEY}
+    ports:
+      - ${PORT}:8080
