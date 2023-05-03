@@ -1,6 +1,6 @@
 services:
   web:
-    image: sharpezhang/gpt-reader:v1.0.4
+    image: sharpezhang/gpt-reader:v1.0.5
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY}
       SLACK_TOKEN: ${SLACK_TOKEN}
